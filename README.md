@@ -7,7 +7,7 @@ Users can register, login, and manage their personal tasks with features like cr
 
 ## Live Demo
 - Frontend: [Your Frontend URL here](https://frontend-url.com)  
-- Backend API: [Your Backend URL here](https://backend-url.com)
+- Backend API: [Your Backend URL here](https://task-manager-backend-production-9c2d.up.railway.app)
 
 ## Features
 - User Authentication (JWT)
