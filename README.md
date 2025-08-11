@@ -60,38 +60,39 @@ Make sure environment variables are set correctly (MongoDB URI, JWT secret, etc.
 ## Frontend
 ## Deployed on Netlify
 Make sure the frontend is configured to use the deployed backend URL (REACT_APP_API_URL).
-## Screenshots
+##  Screenshots
 
 ### Login Page
-![Login Page](./screenshots/Login%20page.png)
+![Login Page](./screenshots/login-page.png)
 
 ### Dashboard
-![Dashboard](./screenshots/Dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
 ### Add New Task
-![Add New](./screenshots/Add%20new.png)
+![Add New](./screenshots/add-new.png)
 
 ### Create Task Form
-![Create](./screenshots/Create.png)
+![Create](./screenshots/create.png)
 
 ### Edit Task
-![Edit Task](./screenshots/Edit%20task.png)
+![Edit Task](./screenshots/edit-task.png)
 
 ### Task List View
-![Task](./screenshots/task.png)
+![Task List](./screenshots/task.png)
 
 ### User Account
 ![Account](./screenshots/account.png)
 
 ### Filter by Priority
-![Filter Priority](./screenshots/filter%20priority.png)
+![Filter Priority](./screenshots/filter-priority.png)
 
 ### Sort by Due Date
-![Filter Sort By](./screenshots/filter%20shortby.png)
+![Filter Sort By](./screenshots/filter-shortby.png)
 
 ### Filter Tasks
-![Filter Task](./screenshots/filter%20task.png)
-## 🎥 Demo Video
+![Filter Task](./screenshots/filter-task.png)
+
+##  Demo Video
 ![Download Demo Video](./demovideo/video2679587306.mp4)
 
 
