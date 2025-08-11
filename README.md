@@ -60,40 +60,27 @@ Make sure environment variables are set correctly (MongoDB URI, JWT secret, etc.
 ## Frontend
 ## Deployed on Netlify
 Make sure the frontend is configured to use the deployed backend URL (REACT_APP_API_URL).
-##  Screenshots
 
-### Login Page
-![Login Page](./screenshots/login-page.png)
+## Screenshots Included
 
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+- login-page.png  
+- dashboard.png  
+- add-new.png  
+- create.png  
+- edit-task.png  
+- task.png  
+- account.png  
+- filter-priority.png  
+- filter-shortby.png  
+- filter-task.png  
 
-### Add New Task
-![Add New](./screenshots/add-new.png)
+All screenshots are located inside the `screenshots/` folder.
 
-### Create Task Form
-![Create](./screenshots/create.png)
-
-### Edit Task
-![Edit Task](./screenshots/edit-task.png)
-
-### Task List View
-![Task List](./screenshots/task.png)
-
-### User Account
-![Account](./screenshots/account.png)
-
-### Filter by Priority
-![Filter Priority](./screenshots/filter-priority.png)
-
-### Sort by Due Date
-![Filter Sort By](./screenshots/filter-shortby.png)
-
-### Filter Tasks
-![Filter Task](./screenshots/filter-task.png)
+---
 
 ##  Demo Video
-![Download Demo Video](./demovideo/video2679587306.mp4)
+
+The demo video file is included as `demo.mp4` inside the `demovideo/` folder.
 
 
 Notes
