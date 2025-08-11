@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "aebc7040-e8d2-48a2-aa4e-bd0da79f9bbd",
+		"name": "Task Manager API",
+		"description": "API documentation for Task Manager (MERN stack) project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47235614",
+		"_collection_link": "https://nifla7382-5647919.postman.co/workspace/83afae02-f0de-43f8-8269-1b6169e642b7/collection/47235614-aebc7040-e8d2-48a2-aa4e-bd0da79f9bbd?action=share&source=collection_link&creator=47235614"
+	},
+	"item": [
+		{
+			"name": "Register.",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"email\": \"testing@example.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-c28S+fZkV4rUdF0EESuGMMeiyOg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Aug 2025 17:11:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6898d2d3471fd64c0ca96ec5\",\n    \"name\": \"Test User\",\n    \"email\": \"testing@example.com\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThkMmQzNDcxZmQ2NGMwY2E5NmVjNSIsImlhdCI6MTc1NDg0NTkwNywiZXhwIjoxNzU3NDM3OTA3fQ.xN8A9R3eGg6F1c4sPn8-vE6pMSFxPu9aywLOkn2xYng\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5001/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"testing@example.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/auth/profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThkMmQzNDcxZmQ2NGMwY2E5NmVjNSIsImlhdCI6MTc1NDg0NjA4MSwiZXhwIjoxNzU3NDM4MDgxfQ.fURNDBYiz2O2sOVji6x9Op5OeobRJlUdD_t6lt3H5As",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/auth/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"My First Task\",\r\n  \"description\": \"This is a test task\",\r\n  \"dueDate\": \"2025-08-15\",\r\n  \"priority\": \"High\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"My First Task\",\r\n  \"description\": \"This is a test task\",\r\n  \"dueDate\": \"2025-08-15\",\r\n  \"priority\": \"High\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Create task"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/tasks/6898d41c471fd64c0ca96ecd",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Task Title\",\r\n  \"description\": \"Updated description for this task\",\r\n  \"priority\": \"Medium\",\r\n  \"dueDate\": \"2025-08-20\",\r\n  \"status\": \"Completed\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/tasks/6898d41c471fd64c0ca96ecd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"tasks",
+						"6898d41c471fd64c0ca96ecd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5001/api/tasks/6898d41c471fd64c0ca96ecd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThkMmQzNDcxZmQ2NGMwY2E5NmVjNSIsImlhdCI6MTc1NDg0NjA4MSwiZXhwIjoxNzU3NDM4MDgxfQ.fURNDBYiz2O2sOVji6x9Op5OeobRJlUdD_t6lt3H5As",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/tasks/6898d41c471fd64c0ca96ecd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"tasks",
+						"6898d41c471fd64c0ca96ecd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
