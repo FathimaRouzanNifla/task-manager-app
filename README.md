@@ -92,7 +92,7 @@ Make sure the frontend is configured to use the deployed backend URL (REACT_APP_
 ### Filter Tasks
 ![Filter Task](./screenshots/filter%20task.png)
 ## 🎥 Demo Video
-[Download Demo Video](./demo video/video2679587306.mp4)
+![Download Demo Video](./demovideo/video2679587306.mp4)
 
 
 Notes
