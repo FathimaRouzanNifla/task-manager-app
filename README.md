@@ -83,7 +83,7 @@ All screenshots are located inside the `screenshots/` folder.
 The demo video file is included as `demo.mp4` inside the `demovideo/` folder.
 
 
-Notes
+## Notes
 Feel free to reach out if you want a walkthrough or have any questions.
 
 Thank you for reviewing my project!
